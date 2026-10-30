@@ -1,84 +1,84 @@
 <h1 align="center">DiscordLink</h1>
 <p align="center">
-    <img alt="Licencia" src="https://img.shields.io/github/license/melerodev/DiscordLink?style=for-the-badge&color=blue&labelColor=141417">
-    <img alt="Última versión" src="https://img.shields.io/github/v/release/melerodev/DiscordLink?include_prereleases&sort=semver&style=for-the-badge&label=VERSI%C3%93N&labelColor=141417">
+    <img alt="License" src="https://img.shields.io/github/license/melerodev/DiscordLink?style=for-the-badge&color=blue&labelColor=141417">
+    <img alt="Latest version" src="https://img.shields.io/github/v/release/melerodev/DiscordLink?include_prereleases&sort=semver&style=for-the-badge&label=VERSION&labelColor=141417">
     <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/melerodev/DiscordLink/ci.yml?style=for-the-badge&labelColor=141417">
     <img alt="Paper" src="https://img.shields.io/badge/Paper%20%2F%20Folia-1.20.6%20%E2%86%92%2026.3-5865F2?style=for-the-badge&labelColor=141417">
-    <a href="https://discord.gg/rMuWwZzCW2"><img alt="Discord" src="https://img.shields.io/badge/Discord-%C3%9Anete-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=141417"></a>
+    <a href="https://discord.gg/rMuWwZzCW2"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=141417"></a>
 </p>
 
 ---
 
-## Descripción
+## Description
 
-**DiscordLink** añade un comando `/discord` que muestra el enlace de invitación de tu servidor de Discord.
-Lo que empieza como "un comando que muestra un enlace fijo" es totalmente configurable: enlace, nombre del
-comando, alias, permisos, varios mensajes con formato **MiniMessage** (clics, hover, degradados…) e incluso
-anuncios automáticos.
+**DiscordLink** adds a `/discord` command that shows your Discord server's invite link.
+What starts as "a command that shows a fixed link" is fully configurable: the link, the command name,
+aliases, permissions, multiple **MiniMessage** lines (clicks, hover, gradients…) and even automatic
+announcements.
 
-Construido sobre la plantilla [Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
+Built on top of [Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
 
-## Características
+## Features
 
-- 🔗 **Enlace configurable** disponible como `<link>` en todos los mensajes.
-- 💬 **Varios mensajes**: tantas líneas como quieras al ejecutar `/discord`, más un mensaje distinto para difundir a todos.
-- 🎨 **MiniMessage** completo (`<click>`, `<hover>`, `<gradient>`, colores hex…) y códigos legacy (`&a`, `&l`).
-- 🏷️ **Alias y nombre del comando** configurables (`/discord`, `/dc`, `/disc`…).
-- 🔐 **Permisos**: permiso configurable, y decides si los jugadores lo tienen por defecto.
-- 🧩 **Placeholders propios** (`<server>`, `<website>`… definidos por ti), **PlaceholderAPI** y **MiniPlaceholders**.
-- 📢 **Anunciador automático** opcional que recuerda el enlace cada X segundos.
-- 🔄 `/discord reload` sin reiniciar el servidor.
-- 🌍 Mensajes del plugin en inglés y español (`language: es_ES`).
-- ⚡ Compatible con **Folia**.
+- 🔗 **Configurable link**, available as `<link>` in every message.
+- 💬 **Multiple messages**: as many lines as you want for `/discord`, plus a separate message to broadcast to everyone.
+- 🎨 Full **MiniMessage** support (`<click>`, `<hover>`, `<gradient>`, hex colors…) and legacy codes (`&a`, `&l`).
+- 🏷️ **Configurable command name and aliases** (`/discord`, `/dc`, `/disc`…).
+- 🔐 **Permissions**: configurable permission, and you decide whether players have it by default.
+- 🧩 **Your own placeholders** (`<server>`, `<website>`… defined by you), **PlaceholderAPI** and **MiniPlaceholders**.
+- 📢 Optional **automatic announcer** that reminds players of the link every X seconds.
+- 🔄 `/discord reload` without restarting the server.
+- 🌍 Plugin messages in English and Spanish (`language: es_ES`).
+- ⚡ **Folia** supported.
 
-## Requisitos
+## Requirements
 
-- Servidor **Paper** o **Folia** de **1.20.6 a 26.3**.
-- **Java 21** (Minecraft 1.20.6 – 1.21.x) o **Java 25** (Minecraft 26.x).
-- No funciona en Spigot ni en versiones anteriores a 1.20.6.
-- Opcional: [PlaceholderAPI](https://modrinth.com/plugin/placeholderapi), [MiniPlaceholders](https://modrinth.com/plugin/miniplaceholders).
+- **Paper** or **Folia** server, **1.20.6 to 26.3**.
+- **Java 21** (Minecraft 1.20.6 – 1.21.x) or **Java 25** (Minecraft 26.x).
+- Does not run on Spigot or on versions older than 1.20.6.
+- Optional: [PlaceholderAPI](https://modrinth.com/plugin/placeholderapi), [MiniPlaceholders](https://modrinth.com/plugin/miniplaceholders).
 
-Versiones probadas: 1.20.6, 1.21.1, 1.21.4, 1.21.8, 1.21.11, 26.1.2, 26.2 y 26.3.
+Tested versions: 1.20.6, 1.21.1, 1.21.4, 1.21.8, 1.21.11, 26.1.2, 26.2 and 26.3.
 
-## Instalación
+## Installation
 
-1. Descarga el `.jar` desde [Releases](https://github.com/melerodev/DiscordLink/releases) (o compílalo, ver abajo).
-2. Cópialo en la carpeta `plugins/` y reinicia el servidor.
-3. Edita `plugins/DiscordLink/config.yml`, cambia `link` por tu invitación y ejecuta `/discord reload`.
+1. Download the `.jar` from [Releases](https://github.com/melerodev/DiscordLink/releases) (or build it, see below).
+2. Put it in your `plugins/` folder and restart the server.
+3. Edit `plugins/DiscordLink/config.yml`, set `link` to your invite and run `/discord reload`.
 
-## Comandos
+## Commands
 
-| Comando              | Descripción                                          | Permiso                                    |
+| Command              | Description                                          | Permission                                 |
 |----------------------|------------------------------------------------------|--------------------------------------------|
-| `/discord`           | Muestra el enlace de Discord                         | `discordlink.command.discord` (configurable, por defecto todos) |
-| `/discord broadcast` | Envía `broadcast-messages` a todos los jugadores     | `discordlink.command.broadcast` (OP)       |
-| `/discord reload`    | Recarga `config.yml` y los idiomas                   | `discordlink.command.reload` (OP)          |
+| `/discord`           | Shows the Discord link                               | `discordlink.command.discord` (configurable, everyone by default) |
+| `/discord broadcast` | Sends `broadcast-messages` to every player           | `discordlink.command.broadcast` (OP)       |
+| `/discord reload`    | Reloads `config.yml` and the language files          | `discordlink.command.reload` (OP)          |
 
-Alias por defecto: `/dc`, `/disc`. El nombre y los alias se cambian en `command.name` / `command.aliases`
-(requiere reiniciar el servidor).
+Default aliases: `/dc`, `/disc`. The name and aliases are set in `command.name` / `command.aliases`
+(requires a server restart).
 
 ## Placeholders
 
-En los mensajes:
+In messages:
 
-| Placeholder       | Valor                                         |
+| Placeholder       | Value                                         |
 |-------------------|-----------------------------------------------|
-| `<link>`          | El enlace configurado                         |
-| `<player>`        | Nombre del jugador que recibe el mensaje      |
-| `<online>`        | Jugadores conectados                          |
-| `<max_players>`   | Máximo de jugadores                           |
-| `<clave>`         | Cualquier clave de la sección `placeholders`  |
-| `%...%`           | Cualquier placeholder de PlaceholderAPI       |
+| `<link>`          | The configured link                           |
+| `<player>`        | Name of the player receiving the message      |
+| `<online>`        | Online players                                |
+| `<max_players>`   | Max players                                   |
+| `<key>`           | Any key from the `placeholders` section       |
+| `%...%`           | Any PlaceholderAPI placeholder                |
 
-PlaceholderAPI (para otros plugins como scoreboards o tab):
+PlaceholderAPI (for other plugins such as scoreboards or tab):
 
-- `%discordlink_link%` → el enlace.
-- `%discordlink_<clave>%` → cualquier valor de `placeholders`, p. ej. `%discordlink_website%`.
+- `%discordlink_link%` → the link.
+- `%discordlink_<key>%` → any value from `placeholders`, e.g. `%discordlink_website%`.
 
-## Configuración
+## Configuration
 
 <details>
-<summary><code>config.yml</code> por defecto</summary>
+<summary>Default <code>config.yml</code></summary>
 
 ```yaml
 # Your Discord invite link. Use it in any message with <link>.
@@ -131,33 +131,33 @@ language: en_US
 
 </details>
 
-## API para desarrolladores
+## Developer API
 
 ```java
 String link = DiscordLinkAPI.getInstance().getLink();
 ```
 
-## Compilar
+## Building
 
 ```bash
 ./gradlew build
 ```
 
-El jar queda en `paper/build/libs/`. Para probarlo en un servidor local:
+The jar ends up in `paper/build/libs/`. To try it on a local server:
 
 ```bash
 ./gradlew runServer                      # Paper 1.21.11
-./gradlew runServer -PmcVersion=1.20.6   # cualquier otra versión
+./gradlew runServer -PmcVersion=1.20.6   # any other version
 ```
 
-## Soporte
+## Support
 
-¿Dudas, sugerencias o problemas? Únete a nuestro Discord:
+Questions, suggestions or problems? Join our Discord:
 
-<a href="https://discord.gg/rMuWwZzCW2"><img alt="Únete a nuestro Discord" src="docs/assets/discord.png" width="300"></a>
+<a href="https://discord.gg/rMuWwZzCW2"><img alt="Join our Discord" src="docs/assets/discord.png" width="300"></a>
 
-También puedes abrir una [issue](https://github.com/melerodev/DiscordLink/issues).
+You can also open an [issue](https://github.com/melerodev/DiscordLink/issues).
 
-## Licencia
+## License
 
-[MIT No Attribution](LICENSE). Basado en [milkdrinkers/Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
+[MIT No Attribution](LICENSE). Based on [milkdrinkers/Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
