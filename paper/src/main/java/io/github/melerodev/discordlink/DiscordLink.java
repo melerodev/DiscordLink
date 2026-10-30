@@ -11,7 +11,7 @@ import io.github.melerodev.discordlink.translation.TranslationHandler;
 import io.github.melerodev.discordlink.updatechecker.UpdateHandler;
 import io.github.melerodev.discordlink.utility.Logger;
 import io.github.milkdrinkers.colorparser.paper.ColorParser;
-import io.github.milkdrinkers.wordweaver.Translation;
+import io.github.melerodev.discordlink.translation.Translation;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 

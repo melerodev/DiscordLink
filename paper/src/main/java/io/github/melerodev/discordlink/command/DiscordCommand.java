@@ -6,7 +6,7 @@ import io.github.melerodev.discordlink.DiscordLink;
 import io.github.melerodev.discordlink.config.PluginConfig;
 import io.github.melerodev.discordlink.utility.Cfg;
 import io.github.milkdrinkers.colorparser.paper.ColorParser;
-import io.github.milkdrinkers.wordweaver.Translation;
+import io.github.melerodev.discordlink.translation.Translation;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
