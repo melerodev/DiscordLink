@@ -160,4 +160,4 @@ You can also open an [issue](https://github.com/melerodev/DiscordLink/issues).
 
 ## License
 
-[MIT No Attribution](LICENSE). Based on [milkdrinkers/Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
+[GNU General Public License v3.0](LICENSE). Based on [milkdrinkers/Minecraft-Plugin-Template](https://github.com/milkdrinkers/Minecraft-Plugin-Template).
